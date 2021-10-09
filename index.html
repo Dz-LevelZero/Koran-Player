@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="author" content="Sami TM">
+  <meta name="description" content="Koran Player">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Koran Player </title>
+  <!-- favicon -->
+  <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+  <link rel="manifest" href="favicon/site.webmanifest">
+  <!-- Font Awsome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css"/>
+  <!-- AOS CSS -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Select Box -->
+  <div class="box">
+    <label for="sourate" class="label">: إختيار السورة</label>
+    <select name="sourate" id="my-select"  >   
+    </select>
+  </div>
+
+  <div class="player-container" data-aos="zoom-in" data-aos-delay="200">
+    <!-- Song -->
+    <div class="img-container" data-aos="flip-up">
+      <img src="img/sami-1.jpeg" alt="Album Art" >
+    </div>
+    <h2 id="order" data-aos="fade-down" data-aos-delay="600"> <span id="order-num">100</span> :رقم</h2>
+    <h2 id="title" data-aos="fade-down" data-aos-delay="400">السورة </h2>
+    <h3 id="artist" data-aos="fade-down" data-aos-delay="300">الايات</h3>
+    <audio src="" ></audio>
+    <!-- Progress -->
+    <div class="progress-container" id="progress-container">
+      <div id="progress" class="progress"></div>
+      <div class="duration-wrapper">
+        <span id="current-time" data-aos="fade-right" data-aos-delay="600">  بداية الآية</span>
+        <span id="duration" data-aos="fade-left" data-aos-delay="600">نهاية الآية</span>
+      </div>
+    </div>
+      <!-- Controls -->
+      <div class="player-controls">
+        <i class="fas fa-step-backward" id="prev-step" title="السورة السابقة" data-aos="fade-down-right"></i>
+        <i class="fas fa-backward" id="prev" title="الآية السابقة" data-aos="fade-up-right"></i>
+        <i class="fas fa-play-circle main-button" id="play" title="تشغيل" data-aos="zoom-in-up" data-aos-delay="600"></i>
+        <i class="fas fa-forward" id="next" title="الآية التالية" data-aos="fade-up-left"></i>        
+        <i class="fas fa-step-forward" id="next-step" title="السورة التالية"data-aos="fade-down-left"></i>
+        
+      </div>      
+  </div> 
+
+
+  <!-- AOS.js  -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="aos.js"></script>
+
+  <!-- Script -->
+  <script src="script.js"></script>
+</body>
+</html>
