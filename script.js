@@ -173,7 +173,8 @@ const prevSurah = () => {
   // Select the sourat and take value    
   const changeFunc = () => {      
     const surahValue = nameOfSurah.value;
-    getCoran(surahValue)
+    order = surahValue
+    getCoran(order)
     pauseSong()
   }
   // Event Listener  changeFunc
